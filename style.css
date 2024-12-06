@@ -1,0 +1,567 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sevillana&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ga+Maamli&family=Sevillana&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yuji+Mai&display=swap");
+:root {
+  --color-Primary: rgb(255, 128, 0);
+  --color-Primary-10: rgb(65, 32, 5);
+  --color-dark: rgb(4, 4, 62);
+  --color-Static-White: White;
+  --color-gray: gray;
+  --color-gray-20: rgba(39, 38, 38, 0.842);
+  --color-Tag-Purple: rgb(2, 0, 130);
+  --color-pink: purple;
+  --color-green: green;
+  --color-bg: rgba(255, 255, 255, 0.847);
+  --font-Montserrat: Montserrat, sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+}
+/* Umumiy Body uchun */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: red;
+}
+
+/* Header uchun */
+.header {
+  color: var(--color-pink);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  border-bottom: 2px solid #ddd; /* Header tagidan pastga chiziq qo'shish */
+  background-color: white;
+}
+
+/* Sovg'a qismi */
+.gift {
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+  padding: 10px 20px; /* Padding qo'shildi */
+  cursor: pointer;
+}
+
+/* Burger Menu uchun */
+.burger-menu {
+  display: none; /* Mobilda faqat burger menyusi ko'rinadi */
+}
+
+.burger-icon {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* Burger menyu faollashtirilganda */
+.nav-links {
+  display: flex;
+  gap: 20px;
+  position: absolute;
+  top: 60px;
+  right: 10px;
+  background-color: white;
+  /* border: 1px solid #ccc; */
+  /* border-radius: 10px; */
+  padding: 20px;
+  display: none;
+}
+
+/* linklar */
+.link {
+  cursor: pointer;
+  color: black;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Burger menyusini ochish uchun active klass */
+.nav-links.active {
+  display: flex;
+}
+
+/* Hovurdagi effekt */
+.link:hover {
+  background-color: rgba(255, 0, 0, 0.1);
+  color: red;
+}
+
+/* Main bo'limi va rasm uchun uslub */
+.main {
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 60px); /* 60px - header balandligi */
+  /* padding: 90px; */
+  /* background-color: var(--color-Tag-Purple); */
+  /* position: relative; */
+  /* border-radius: 50px; */
+}
+
+.main-image {
+  max-width: 2000px;
+  max-height: 500px;
+  object-fit: contain;
+  align-items: center;
+  padding: -2px -50px;
+  /* border-radius: 5px; */
+}
+/* About qismi */
+.display {
+  display: flex;
+}
+.About {
+  background-color: var(--color-gray);
+
+  border-radius: 10px;
+  /* display: flex; */
+}
+.about__title {
+  color: blue;
+  padding: 50px 35px;
+  font-family: "Edu AU VIC WA NT Arrows", cursive;
+  text-align: center;
+  font-size: 45px;
+}
+.sarlavha {
+  padding: 30px 30px;
+  color: blue;
+  text-align: center;
+  font-size: 50px;
+}
+.matn {
+  padding: 30px 20px;
+  color: var(--color-Primary);
+}
+.main__image {
+  max-width: 800px;
+  border-radius: 10px;
+}
+.joy {
+  padding: 30px;
+}
+
+/* header-2 qismi */
+.header_2 {
+  /* padding: 65px 240px; */
+  padding-top: 40px;
+  /* font-size: 70px; */
+  display: flex;
+  font-family: "Ga Maamli", sans-serif;
+  text-align: center;
+}
+.sarlavha_tg {
+  text-align: center;
+  font-size: 15px;
+  font-family: "Sevillana", cursive;
+  padding-top: 350px;
+}
+.yil_nomi {
+  font-size: 25px;
+  /* font-family: "Sevillana", cursive; */
+}
+.gap {
+  font-size: 55px;
+  padding: 30px 50px;
+}
+.images {
+  max-width: 120px;
+  border-radius: 20px;
+}
+
+/* main_2 */
+.main_2 {
+  display: flex;
+  /* padding-left: 15%; */
+  /* text-align: center; */
+}
+.for-img {
+  border: 1px solid var(--color-Tag-Purple);
+  max-width: 300px;
+  background-color: var(--color-gray);
+  border-radius: 30px;
+  /* padding: 100xp; */
+}
+
+.img_turi {
+  background-color: #ddd;
+  text-align: center;
+  border-radius: 100px;
+  padding-top: 5px;
+  color: blue;
+}
+.div {
+  background-color: #ddd;
+  border: 1px solid black;
+  border-radius: 30px;
+  text-align: center;
+  height: 70px;
+  font-size: 25px;
+}
+/* Footer styles */
+.footer {
+  color: white;
+  text-align: center;
+  padding: 200px 20px 0 20px;
+  position: relative;
+
+  /* Background image */
+  background-image: url("img-compressed/img-compressed/bg-forest.png");
+  background-size: cover;
+  background-position: center center;
+
+  height: 750px;
+  width: 100%;
+}
+
+.footer h2 {
+  margin-top: 20px;
+  font-size: 1.8rem;
+}
+
+.footer h6 {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.footer .time__btn {
+  padding: 15px 30px;
+  background-color: #0800ff2c;
+  color: rgb(0, 0, 0);
+  font-size: 1.1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.time__text {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.time__btn {
+  background-color: #242c52;
+  color: rgb(255, 255, 255);
+  padding: 15px 30px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.time__btn:hover {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+}
+
+.time__express {
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+}
+
+/* Time countdown section */
+.countdown-timer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ff867c; /* Yangi yil ranglariga mos */
+  padding: 10px 20px;
+  border-radius: 10px;
+  gap: -100px; /* Elementlar orasidagi masofa */
+  width: 344px;
+  height: 80px;
+  text-align: center;
+  /* padding-left: 100px; */
+  /* max-width: 100px; */
+}
+
+.time-box {
+  text-align: center;
+  color: white;
+  flex: 1; /* Bo'limlar teng kenglikka ega bo'lishi uchun */
+}
+
+.time-box h2 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.time-box p {
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.time__days {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.days {
+  font-size: 1rem;
+  color: #f39c12;
+}
+
+/* Divider for better spacing between time elements */
+.time__divider {
+  font-size: 2rem;
+  color: white;
+}
+/* Arrow button styles */
+.arrows {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 20px;
+  z-index: 1000;
+}
+
+.arrow-btn {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 15px;
+  font-size: 30px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.arrow-btn:hover {
+  background-color: #f39c12;
+}
+
+/* Content area styles */
+.content {
+  margin-top: 100px;
+  padding: 20px;
+  background-color: white;
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+/* strelka */
+.container {
+  display: flex;
+  align-items: center;
+
+  padding: 10px 0 10px 1110px;
+  gap: 20px;
+}
+
+.left,
+.right {
+  border: 1px solid gray;
+  background-color: red;
+  color: gray;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 30px;
+  height: 56px;
+  width: 56px;
+  line-height: 56px; /* Matnni tugma ichida vertikal markazlash */
+  cursor: pointer; /* Tugmalarni kliklanuvchi qilish */
+}
+
+.left:hover,
+.right:hover {
+  color: rgb(255, 0, 0); /* Hover paytida matn rangi */
+  border: 1px solid white;
+  background-color: white;
+}
+/* LINKLAR BO'LIMI */
+.Links-section {
+  display: flex;
+  /* text-align: center; */
+  /* align-items: center; */
+  justify-content: center;
+
+  background-color: white;
+  text-align: center;
+}
+.links__title {
+  background-color: white;
+  color: black;
+  /* text-align: center; */
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  cursor: pointer;
+  padding: 20px 90px;
+  height: 200px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+.a-link {
+  text-decoration: none;
+  color: black;
+}
+.a-link:hover {
+  text-decoration: dashed;
+  background-color: #f0f0f0; /* Hover holatida orqa fon rangini o'zgartiradi */
+  color: #04007e; /* Hover holatida matn rangini o'zgartiradi */
+}
+.links__title:hover {
+  background-color: #f0f0f0; /* Hover holatida orqa fon rangini o'zgartiradi */
+  color: #007bff; /* Hover holatida matn rangini o'zgartiradi */
+}
+/* icons-link */
+.icons-links {
+  display: flex;
+  /* text-align: center; */
+  padding-left: 550px;
+  background-color: white;
+  /* right: 50%; */
+}
+.icons-link {
+  /* text-align: center; */
+  /* padding-left: 50%; */
+  padding: 12px;
+  & img {
+    height: 50px;
+    /* text-align: center; */
+    align-items: center;
+    /* position: absolute; */
+    color: rgb(6, 6, 6);
+    background-color: rgb(255, 255, 255);
+  }
+}
+/* .icons-text */
+
+.icons__text {
+  background-color: white;
+  color: black;
+  text-align: center;
+  padding-left: 70px;
+}
+/* Burger icon */
+.burger-menu {
+  display: none;
+  cursor: pointer;
+  padding: 20px;
+}
+
+.burger-icon {
+  font-size: 30px;
+  color: black;
+}
+
+/* Nav links */
+.nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #fff;
+  position: relative;
+  top: 0;
+  z-index: 100;
+}
+
+.link {
+  cursor: pointer;
+  font-size: 18px;
+  color: #333;
+  padding: 10px;
+}
+
+.link:hover {
+  background-color: #ddd;
+  color: #ff6600;
+  border-radius: 5px;
+}
+/* best gif */
+
+.sarlavha_tgs {
+  padding: 50px 0;
+  font-size: 40px;
+  font-family: var(--font-family);
+}
+.fex_not {
+  padding: 65px;
+}
+.MEDIA {
+  padding: 0px 300px;
+  font-size: 40px;
+}
+
+/* linklar bo'limi */
+.linklar_title {
+  /* display: flex; */
+  text-align: center;
+  padding: 10px 20px;
+  font-size: 25px;
+}
+.linklar_title:hover {
+  background-color: white;
+  height: 5px;
+  color: aqua;
+}
+.linklar {
+  display: flex;
+  background-color: #ddd;
+  text-align: center;
+  padding-left: 25%;
+}
+.a {
+  text-decoration: none;
+  /* background-color: ; */
+  color: black;
+}
+.a:active {
+  cursor: pointer;
+  /* text-decoration: solid; */
+  color: red;
+}
+.a:hover {
+  color: red;
+  text-decoration: solid;
+}
+/* linklar_icons */
+.linklar_icons {
+  background-color: white;
+  padding: 30px 20px;
+}
+.linklar_icons_title {
+  color: black;
+  height: 10px;
+  text-align: center;
+  display: flex;
+  padding: 0 45%;
+  & img:hover {
+    color: red;
+  }
+}
+/* .linklar_icons_title:active {
+  color: red;
+  cursor: pointer;
+  /* scale: 1; 
+} */
+img:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.linklar-text {
+  background-color: white;
+  padding: 10px 20px;
+  & a {
+    text-decoration: none;
+    color: black;
+  }
+  & a:hover {
+    color: red;
+  }
+}

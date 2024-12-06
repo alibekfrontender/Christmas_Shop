@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Design</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media.css" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header class="header">
+      <div class="gift" id="gift">Gifts</div>
+      <div class="burger-menu" id="burger-menu">
+        <div class="burger-icon" onclick="toggleMenu()">&#9776;</div>
+      </div>
+      <nav class="nav-links" id="nav-links">
+        <div class="link" onclick="showSection('gifts')">Gifts</div>
+        <div class="link" onclick="showSection('about')">About</div>
+        <div class="link" onclick="showSection('best')">Best</div>
+        <div class="link" onclick="showSection('contacts')">Contacts</div>
+      </nav>
+    </header>
+
+    <!-- Main Section -->
+    <main class="main">
+      <img
+        src="img-compressed/img-compressed/bg-ball.png"
+        alt=""
+        class="main-image"
+      />
+      <div class="display">
+        <div class="About">
+          <p class="about__title">About</p>
+          <h4 class="sarlavha">Unleash your inner superhero!</h4>
+          <p class="matn">
+            This New Year marks the beginning of your journey to inner harmony
+            and new strengths. We offer unique gifts that will help you improve
+            your life.
+          </p>
+        </div>
+        <img
+          class="main__image"
+          src="img-compressed/img-compressed/santa.png"
+          alt=""
+        />
+      </div>
+    </main>
+
+    <!-- Section 2 -->
+    <div class="sarlavha_tg">
+      <p class="sarlavha_2">Become Happier!</p>
+      <h5 class="yil_nomi">in the new 2025</h5>
+    </div>
+    <div class="MEDIA">
+      <header class="header_2">
+        <h2 class="gap">Live</h2>
+        <img
+          class="images"
+          src="img-compressed/img-compressed/snowman.png"
+          alt=""
+        />
+        <h2 class="gap">create</h2>
+        <img
+          class="images"
+          src="img-compressed/img-compressed/christmas-trees.png"
+          alt=""
+        />
+        <h2 class="gap">Love</h2>
+        <img
+          class="images"
+          src="img-compressed/img-compressed/christmas-tree-ball.png"
+          alt=""
+        />
+      </header>
+    </div>
+
+    <!-- Arrows -->
+    <div class="container">
+      <div class="left">←</div>
+      <div class="right">→</div>
+    </div>
+
+    <!-- Best Gifts -->
+    <div class="sarlavha_tgs">
+      <p class="sarlavha_2">Best Gifts</p>
+      <h5 class="yil_nomi">especially for you</h5>
+    </div>
+    <main class="main_2">
+      <div class="fex_not">
+        <img
+          class="for-img"
+          src="img-compressed/img-compressed/gift-for-work.png"
+          alt=""
+        />
+        <div class="div">
+          <div class="flex_not">
+            <p class="img_turi">for-work</p>
+          </div>
+          <h5 class="img_ismi">Console.log Guru</h5>
+        </div>
+      </div>
+      <div class="fex_not">
+        <img
+          class="for-img"
+          src="img-compressed/img-compressed/gift-for-health.png"
+          alt=""
+        />
+        <div class="div">
+          <div class="flex_not">
+            <p class="img_turi">For health</p>
+          </div>
+          <h5 class="img_ismi">Hydration Bot</h5>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <h2 class="time__text">
+        Ready to start your journey to a better version of yourself?
+      </h2>
+      <button class="time__btn">Explore Magical Gifts</button>
+      <h6 class="time__express">The New Year is Coming Soon...</h6>
+      <div class="countdown-timer">
+        <div class="time-box">
+          <h2 id="days">27</h2>
+          <p>DAYS</p>
+        </div>
+        <div class="time-box">
+          <h2 id="hours">4</h2>
+          <p>HOURS</p>
+        </div>
+        <div class="time-box">
+          <h2 id="minutes">36</h2>
+          <p>MINUTES</p>
+        </div>
+        <div class="time-box">
+          <h2 id="seconds">57</h2>
+          <p>SECONDS</p>
+        </div>
+      </div>
+    </footer>
+    <div class="linklar">
+      <div class="linklar_title">
+        <img src="img-compressed/img-compressed/santa-claus.png" alt="" />
+        <!-- <div class="tel">+(998) 50 501 29 36</div> -->
+        <div class="linklar_phone_title">
+          <a class="a" href="https://t.me/+998505012936">+(998) 50 501 29 36</a>
+          <div class="tel_message">Call Us</div>
+        </div>
+      </div>
+      <div class="linklar_title">
+        <img src="img-compressed/img-compressed/Group.png" alt="" />
+        <!-- <div class="tel">Magic forest</div> -->
+        <div class="linklar_phone_title">
+          <a class="a" href="https://yandex.uz/maps/-/CDc3jQJT">Magic forest</a>
+          <div class="tel_message">Meet Us</div>
+        </div>
+      </div>
+      <div class="linklar_title">
+        <img src="img-compressed/img-compressed/snake.svg" alt="" />
+        <!-- <div class="tel">gifts@magic.com</div> -->
+        <div class="linklar_phone_title">
+          <a class="a" href="https://github.com/alibekfrontender"
+            >gifts@magic.com</a
+          >
+          <div class="tel_message">Write Us</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- linklar bo'limi _2 -->
+
+    <div class="linklar linklar_icons">
+      <div class="linklar_icons_title">
+        <div class="icons">
+          <a href="tel:+375291112233"
+            ><img src="img-compressed/img-compressed/telegram-icons.png" alt=""
+          /></a>
+        </div>
+        <div class="icons">
+          <a href="https://rs.school/"
+            ><img src="img-compressed/img-compressed/facebook-icons.png" alt=""
+          /></a>
+        </div>
+        <div class="icons">
+          <a href="https://rs.school/"
+            ><img
+              src="img-compressed/img-compressed/ingtagram-icons.png"
+              alt=""
+          /></a>
+        </div>
+        <div class="icons">
+          <a href="https://rs.school/">
+            <img src="img-compressed/img-compressed/x-icons.png" alt=""
+          /></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- linklardan keyingi text -->
+
+    <div class="linklar-text">
+      <p>© Copyright 2025, All Rights Reserved</p>
+      <a href="https://rs.school">Made in Rolling Scopes School</a>
+    </div>
+    <!-- <nav class="nav-links" id="nav-links">
+      <div class="link" onclick="showSection('gifts')">Gifts</div>
+      <div class="link" onclick="showSection('about')">About</div>
+      <div class="link" onclick="showSection('best')">Best</div>
+      <div class="link" onclick="showSection('contacts')">Contacts</div>
+    </nav> -->
+
+    <script src="script.js"></script>
+  </body>
+</html>

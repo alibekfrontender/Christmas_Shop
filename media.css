@@ -1,0 +1,223 @@
+/* Default styles */
+body {
+  background-color: red;
+  text-align: center;
+}
+
+/* Media queries for mobile view */
+@media (max-width: 768px) {
+  /* Main image resizing */
+  .main-image {
+    width: 800px;
+    height: 100px;
+    margin: 0 -200px;
+  }
+
+  /* Header */
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: white;
+    /* border-radius: 10px; */
+  }
+
+  .burger-menu {
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: -220px;
+    text-align: center;
+    padding-left: 950px;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    position: absolute;
+    top: 82px;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    text-align: center;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  /* Main content adjustments */
+  .main-image {
+    width: 100%;
+    height: auto;
+    margin-top: 80px; /* headerning yuqoriga joylashganligi uchun asosiy kontentni biroz pastga surish */
+  }
+
+  /* About section */
+  .display {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .About {
+    margin-bottom: 0;
+  }
+
+  /* Center and padding for .sarlavha_tg */
+  .sarlavha_tg {
+    text-align: center;
+    padding-top: 600px;
+    font-size: 60px;
+  }
+
+  /* Header 2 adjustments */
+  .header_2 {
+    /* padding: 65px 240px; */
+    display: flex;
+    font-family: "Ga Maamli", sans-serif;
+    text-align: center;
+  }
+
+  .header_2 .gap {
+    font-size: 24px;
+    padding-left: -100px;
+  }
+
+  .header_2 .images {
+    width: 80px;
+    height: auto;
+    margin: 10px auto;
+  }
+
+  /* Container arrows resizing */
+  .container {
+    display: flex;
+    align-items: center; /*Vertikal markazlash */
+    padding-left: 630px;
+    padding-top: 10px;
+    gap: 20px; /* Tugmalar orasida 20px bo'sh joy */
+  }
+  .container .left,
+  .container .right {
+    font-size: 24px;
+  }
+
+  /* Main 2 section */
+  .main_2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .fex_not {
+    width: 90%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .footer .time__text,
+  .footer .time__btn,
+  .footer .time__express {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  .footer {
+    color: white;
+    text-align: center;
+    /* padding: 50px 20px; */
+    position: relative;
+  }
+  .for-img {
+    border: 1px solid var(--color-Tag-Purple);
+    max-width: 500px;
+    background-color: var(--color-gray);
+    border-radius: 30px;
+  }
+  .div {
+    background-color: #ddd;
+    border: 1px solid black;
+    /* border-radius: 30px; */
+    text-align: center;
+    height: 70px;
+    font-size: 25px;
+  }
+  .time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid gray;
+    background-color: grey;
+    border-radius: 20px;
+    padding: 30px;
+    padding-inline-start: 50px;
+    margin: 80px 300px;
+    margin-inline-start: 150px;
+    margin-inline-end: 150px;
+  }
+  /* Linklar konteynerining uslubi */
+  .linklar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* elementlar orasidagi bo'shliq */
+    padding: -1px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* border-radius: 10px; */
+    /* max-width: 7000px; */
+    text-align: center;
+    /* padding: 0 0 0 90px; */
+    /* margin-left: 10px; */
+  }
+
+  /* Har bir linklar_title uchun uslub */
+  .linklar_title {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    min-height: 200px;
+    padding-left: 150px;
+    margin-left: -150px;
+    background-color: rgba(108, 108, 108, 0.458);
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  /* Rasm uslubi */
+  .linklar_title img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+  }
+
+  /* linklar_phone_title uslubi */
+  .linklar_phone_title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  /* Havolalar uslubi */
+  .linklar_phone_title .a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    transition: color 0.3s;
+  }
+
+  .linklar_phone_title .a:hover {
+    color: #007bff; /* hover effekti */
+  }
+
+  /* Tel xabar uslubi */
+  .tel_message {
+    font-size: 14px;
+    color: #666;
+  }
+}
